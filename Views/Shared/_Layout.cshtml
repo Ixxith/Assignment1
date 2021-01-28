@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/Main.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>@ViewBag.Title</h1>
+    <header>
+        <menu>
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="Index">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="GradeCalculator">
+                        Grade Calculator
+                    </a>
+                </li>
+            </ul>
+        </menu>
+    </header>
+
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        Copyright Ian Cole 2020
+    </footer>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/FormHandler.js"></script>
+</body>
+</html>

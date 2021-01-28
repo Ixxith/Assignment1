@@ -1,17 +1,17 @@
 ﻿// Ian Cole
 // This creates an on click event for the submit button and calculates the score and 
 // grade using javascipt
-var submit = document.getElementById("submitButton");
+var submit = $("#submitButton").click(
 // Add listener event
-submit.addEventListener("click", function () {
+ function () {
     // Set default grade
     var gradeScore = 0;
     // Get scores from form
-    var aScore = document.getElementById("assignment").value;
-    var gScore = document.getElementById("group").value;
-    var qScore = document.getElementById("quiz").value;
-    var eScore = document.getElementById("exam").value;
-    var iScore = document.getElementById("intex").value;
+    var aScore = $("#assignment").value;
+    var gScore = $("#group").value;
+    var qScore = $("#quiz").value;
+    var eScore = $("#exam").value;
+    var iScore = $("#intex").value;
     // Add up scores with weights
     gradeScore += aScore / 100 * 50;
     gradeScore += gScore / 100 * 10;

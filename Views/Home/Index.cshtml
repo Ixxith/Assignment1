@@ -1,15 +1,11 @@
-﻿<!DOCTYPE html>
+﻿
+@{ 
+    ViewBag.Title = "IS413 - Ian Cole";
+}
 
-<html>
-<head>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <meta charset="utf-8" />
-    <title> IS413 </title>
-    <link href="css/Main.css" rel="stylesheet" />
-</head>
+
 <body>
-    <h1>IS 413 - Ian Cole</h1>
-    <img width="500px" src="images/IMG_20210120_101901498.jpg" />
+    <img width="500px" src="~/images/IMG_20210120_101901498.jpg" />
     <p style="font-size:12px"><i>One of my hobbies is video games</i></p>
     <p><b>What I hope to get out of this class </b><br /> The things I want to get out of this class include understanding enterprise development, learning a new language, and becoming familiar in using ASP.Net. I want to be able to understand how development works on a large scale so that if I start working in a large company, I can be confident while developing there. I also want to learn a strongly typed language, which we will be doing in this class by using C#. Finally, this class will help me become familiar with ASP.net and using the MVC development model, which will be important to learn as these tools are often used for development.</p>
     <p>My top 3 jobs</p>
@@ -21,20 +17,6 @@
     <h2> Grade calculator</h2>
     <p> Use this webpage to calculate your grade in IS413. Just put your grades in and we will do the rest.</p>
 
-    <form>
-        <label>  Assignments (%):       </label>
-        <input type="number" min="0" max="100" id="assignment" />
-        <label>  Group Project (%):       </label>
-        <input type="number" min="0" max="100" id="group" />
-        <label>  Quizzes (%):       </label>
-        <input type="number" min="0" max="100" id="quiz" />
-        <label>  Exams (%):       </label>
-        <input type="number" min="0" max="100" id="exam" />
-        <label>  INTEX (%):       </label>
-        <input type="number" min="0" max="100" id="intex" />
-        <br />
-        <button type="submit" id="submitButton"> Find out your grade</button>
-    </form>
+
 </body>
-<script src="js/FormHandler.js"></script>
-</html>
+
